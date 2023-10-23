@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  Sparkling Website made with Typescript, Gatsby, Tailwind
 </h1>
 
 ## 🚀 Quick start
