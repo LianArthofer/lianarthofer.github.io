@@ -9,22 +9,17 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [  
-    {
-      resolve: `gatsby-plugin-google-gtag`,
+  plugins: [
+    { // this must be loaded first in order to work
+      resolve: `gatsby-plugin-gtag`, // note this instead of gatsby-plugin-react-helmet
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.adawd 
-       trackingId: [
-          "G-F804S3C6B9" // Google Analytics / GA
-        ],
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-          // Setting this parameter is also optional
-         
-        },
-      },
+        trackingId: "G-F804S3C6B9",
+        head: true, // note this is TRUE and not FALSE as listed in other examples above
+        anonymize: true
+      }
     },
+    "gatsby-plugin-react-helmet",
+    // other plugins
   ]
 };
 
