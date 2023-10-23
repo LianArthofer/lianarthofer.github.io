@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.adawd 
-       trackingIds: [
+       trackingId: [
           "G-F804S3C6B9" // Google Analytics / GA
         ],
         pluginConfig: {
